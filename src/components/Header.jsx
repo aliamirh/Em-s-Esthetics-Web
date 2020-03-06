@@ -36,7 +36,7 @@ const Header = () => {
 
 const headerLinksDiv = {
   textAlign: 'center',
-  backgroundColor: '#faf0e6',
+  backgroundColor: '#72a675',
   fontSize: '25px',
   fontFamily: 'Roboto, sans-serif'
 };
@@ -52,8 +52,7 @@ const linkListItem = {
 
 const linkTo = {
   color: 'white',
-  textShadow:
-    '-1px 1px 0 #0002,1px 1px 0 #0002,1px -1px 0 #0002, -1px -1px 0 #0002'
+  textDecoration: 'none'
 };
 
 const headerLogo = {
