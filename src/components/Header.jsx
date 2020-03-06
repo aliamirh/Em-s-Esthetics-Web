@@ -1,16 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Img from './src/Img/logo.jpg';
-
-console.log('hello', Img);
-
+import Logo from '../logo.jpg';
 const Header = () => {
   return (
     <div>
-      <div>
-        <img src={Img} alt='logo' />
-      </div>
-      <h1 style={headerLogo}>Em's Esthetics </h1>
+      <img style={headerLogo} src={Logo} alt='logo' />
+
       <div style={headerLinks}>
         <Link to='/'>Home</Link> | <Link to='/services'>Services</Link> |
         <Link to='/contact'>Contact</Link> |
@@ -26,7 +21,11 @@ const headerLinks = {
 };
 
 const headerLogo = {
-  textAlign: 'center'
+  display: 'block',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  height: '50%',
+  width: '40%'
 };
 
 export default Header;
