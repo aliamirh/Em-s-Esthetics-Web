@@ -6,19 +6,27 @@ const Header = () => {
   return (
     <div>
       <img style={headerLogo} src={Logo} alt='logo' />
-      <div style={headerLinks}>
+      <div style={headerLinksDiv}>
         <ul style={linkUnordered}>
           <li style={linkListItem}>
-            <Link to='/'>Home</Link>
+            <Link style={linkTo} to='/'>
+              Home
+            </Link>
           </li>
           <li style={linkListItem}>
-            <Link to='/services'>Services</Link>
+            <Link style={linkTo} to='/services'>
+              Services
+            </Link>
           </li>
           <li style={linkListItem}>
-            <Link to='/contact'>Contact</Link>
+            <Link style={linkTo} to='/contact'>
+              Contact
+            </Link>
           </li>
           <li style={linkListItem}>
-            <Link to='./portfolio'>Portfolio</Link>
+            <Link style={linkTo} to='./portfolio'>
+              Portfolio
+            </Link>
           </li>
         </ul>
       </div>
@@ -26,7 +34,7 @@ const Header = () => {
   );
 };
 
-const headerLinks = {
+const headerLinksDiv = {
   textAlign: 'center',
   backgroundColor: '#faf0e6',
   fontSize: '25px',
@@ -40,6 +48,12 @@ const linkUnordered = {
 const linkListItem = {
   display: 'inLine',
   padding: '40px'
+};
+
+const linkTo = {
+  color: 'white',
+  textShadow:
+    '-1px 1px 0 #0002,1px 1px 0 #0002,1px -1px 0 #0002, -1px -1px 0 #0002'
 };
 
 const headerLogo = {
