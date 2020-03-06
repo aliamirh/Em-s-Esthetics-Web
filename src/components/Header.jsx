@@ -6,11 +6,21 @@ const Header = () => {
   return (
     <div>
       <img style={headerLogo} src={Logo} alt='logo' />
-
       <div style={headerLinks}>
-        <Link to='/'>Home</Link> | <Link to='/services'>Services</Link> |
-        <Link to='/contact'>Contact</Link> |
-        <Link to='./portfolio'>Portfolio</Link>
+        <ul style={linkUnordered}>
+          <li style={linkListItem}>
+            <Link to='/'>Home</Link>
+          </li>
+          <li style={linkListItem}>
+            <Link to='/services'>Services</Link>
+          </li>
+          <li style={linkListItem}>
+            <Link to='/contact'>Contact</Link>
+          </li>
+          <li style={linkListItem}>
+            <Link to='./portfolio'>Portfolio</Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
@@ -21,6 +31,15 @@ const headerLinks = {
   backgroundColor: '#faf0e6',
   fontSize: '25px',
   fontFamily: 'Roboto, sans-serif'
+};
+
+const linkUnordered = {
+  listStyle: 'none'
+};
+
+const linkListItem = {
+  display: 'inLine',
+  padding: '40px'
 };
 
 const headerLogo = {
