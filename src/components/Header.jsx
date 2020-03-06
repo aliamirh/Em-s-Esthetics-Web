@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.jpg';
+
 const Header = () => {
   return (
     <div>
@@ -17,7 +18,9 @@ const Header = () => {
 
 const headerLinks = {
   textAlign: 'center',
-  backgroundColor: '#a7cdd1'
+  backgroundColor: '#faf0e6',
+  fontSize: '25px',
+  fontFamily: 'Roboto, sans-serif'
 };
 
 const headerLogo = {
