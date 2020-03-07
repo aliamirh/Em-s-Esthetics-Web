@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../logo.jpg';
+import Logo from '../img/logo.jpg';
 import { Spring } from 'react-spring/renderprops';
 
 const Header = () => {
