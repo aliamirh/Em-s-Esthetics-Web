@@ -15,13 +15,19 @@ const Header = () => {
           <div>
             <ul style={linkUnordered}>
               <li style={linkListItemSocialMedia}>
-                <img style={socialMedia} src={Facebook} alt='facebook' />
+                <a href='https://www.facebook.com/EmsEsthetics/'>
+                  <img style={socialMedia} src={Facebook} alt='facebook' />
+                </a>
               </li>
               <li style={linkListItemSocialMedia}>
-                <img style={socialMedia} src={Instagram} alt='instagram' />
+                <a href='https://www.instagram.com/emsesthetics/'>
+                  <img style={socialMedia} src={Instagram} alt='instagram' />
+                </a>
               </li>
               <li style={linkListItemSocialMedia}>
-                <img style={socialMedia} src={Twitter} alt='twitter' />
+                <a href='https://twitter.com/emsesthetics'>
+                  <img style={socialMedia} src={Twitter} alt='twitter' />
+                </a>
               </li>
             </ul>
           </div>

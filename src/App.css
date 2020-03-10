@@ -14,3 +14,8 @@ h2 {
   border: 8px outset #72a675;
   border-radius: 10px;
 }
+
+/* not working properly yet */
+#backgroundColor {
+  background-color: #72a675;
+}

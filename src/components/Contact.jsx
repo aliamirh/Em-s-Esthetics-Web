@@ -1,23 +1,27 @@
 import React from 'react';
+import '../App.css';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 class Contact extends React.Component {
   render() {
     return (
-      <div>
-        <Map
-          google={this.props.google}
-          zoom={20}
-          style={mapStyles}
-          initialCenter={{ lat: 45.6775868, lng: -122.6706828 }}
-        >
-          <Marker
-            position={{ lat: 45.6775868, lng: -122.6706828 }}
-            text='Ems Esthetics'
-          />
-        </Map>
+      <div id='backgroundColor' style={divContentMargin}>
         <div>
           <h1>Contact</h1>
+        </div>
+        <div>
+          {/* calling this Component is not letting me update the stylesheet */}
+          <Map
+            google={this.props.google}
+            zoom={18}
+            style={mapStyles}
+            initialCenter={{ lat: 45.6774, lng: -122.6694 }}
+          >
+            <Marker
+              position={{ lat: 45.6774, lng: -122.6694 }}
+              text='Ems Esthetics'
+            />
+          </Map>
         </div>
       </div>
     );
@@ -25,8 +29,12 @@ class Contact extends React.Component {
 }
 
 const mapStyles = {
-  width: '100%',
-  height: '100%'
+  width: '40%',
+  height: '50%'
+};
+const divContentMargin = {
+  marginLeft: '20%',
+  marginRight: '20%'
 };
 
 export default GoogleApiWrapper({
