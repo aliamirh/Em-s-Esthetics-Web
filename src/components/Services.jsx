@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div style={backGroundImg}>
       <div style={divContentMargin}>
-        <div style={centerMenu}>
+        <div id='borderDemo' style={centerMenu}>
           <h1 style={headerFont}>Services</h1>
           <p style={boldTextUnderline}>Holistic Skin Treatments</p>
           <p>30 minutes ...............................................$45</p>
@@ -89,7 +89,9 @@ const divContentMargin = {
 };
 
 const centerMenu = {
-  marginLeft: '40%'
+  marginLeft: '40%',
+  padding: '5px',
+  textAlign: 'center'
 };
 
 const headerFont = {

@@ -9,3 +9,8 @@ p {
 h2 {
   font-family: sans-serif;
 }
+
+#borderDemo {
+  border: 8px outset #72a675;
+  border-radius: 10px;
+}
