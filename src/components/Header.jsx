@@ -12,7 +12,7 @@ const Header = () => {
       {props => (
         <div style={props}>
           <img style={headerLogo} src={Logo} alt='logo' />
-          <div>
+          <div id='borderHome'>
             <ul style={linkUnordered}>
               <li style={linkListItemSocialMedia}>
                 <a href='https://www.facebook.com/EmsEsthetics/'>
@@ -42,6 +42,13 @@ const Header = () => {
                 <Link style={linkTo} to='/services'>
                   Services
                 </Link>
+                <ul>
+                  <li>Holistic Skin Treatments</li>
+                  <li>Lash Extensions</li>
+                  <li>Waxing & Tinting</li>
+                  <li>Natural Makeup</li>
+                  <li>Aromatherapy</li>
+                </ul>
               </li>
               <li style={linkListItem}>
                 <Link style={linkTo} to='/contact'>
@@ -63,7 +70,6 @@ const Header = () => {
 
 const headerLinksDiv = {
   textAlign: 'center',
-  backgroundColor: '#72a675',
   fontSize: '25px',
   fontFamily: 'Roboto, sans-serif'
 };
@@ -78,7 +84,7 @@ const linkListItem = {
 };
 
 const linkTo = {
-  color: 'white',
+  color: '#545454',
   textDecoration: 'none'
 };
 

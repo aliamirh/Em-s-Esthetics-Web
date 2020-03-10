@@ -1,5 +1,4 @@
 body {
-  background: url('fillerImages/green.jpg');
 }
 
 p {
@@ -18,4 +17,50 @@ h2 {
 /* not working properly yet */
 #backgroundColor {
   background-color: #72a675;
+}
+
+#borderHome {
+  border-bottom: 4px double #d3c95d;
+}
+
+.myButton {
+  margin-left: 55px;
+  background-color: #d3c95d;
+  border-radius: 1px;
+  border: 1px solid #adad3b;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  padding: 5px 53px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #cec787;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#borderMission {
+  border: 4px double #d3c95d;
+}
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
 }

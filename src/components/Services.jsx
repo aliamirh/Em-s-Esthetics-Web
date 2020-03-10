@@ -1,10 +1,17 @@
 import React from 'react';
 import '../App.css';
-import bkgImg from '../fillerImages/background.jpg';
+import client from '../clients/client.jpg';
+import filler from '../fillerImages/filler.jpg';
 
 const Services = () => {
   return (
-    <div style={backGroundImg}>
+    <div>
+      <div class='circular--landscape' style={clientImg}>
+        <img src={client} alt='client' />
+      </div>
+      <div style={moveFillerImg}>
+        <img style={circularFillerImg} src={filler} alt='client' />
+      </div>
       <div style={divContentMargin}>
         <div id='borderDemo' style={centerMenu}>
           <h1 style={headerFont}>Services</h1>
@@ -83,13 +90,25 @@ const Services = () => {
   );
 };
 
+const circularFillerImg = {
+  height: '200px',
+  width: '200px',
+  borderRadius: '50%'
+};
+
+const moveFillerImg = {
+  float: 'right',
+  marginRight: '400px'
+};
+
 const divContentMargin = {
   marginLeft: '20%',
   marginRight: '20%'
 };
 
 const centerMenu = {
-  marginLeft: '40%',
+  marginLeft: '30%',
+  marginRight: '30%',
   padding: '5px',
   textAlign: 'center'
 };
@@ -107,9 +126,8 @@ const boldTextUnderline = {
   textDecoration: 'underline'
 };
 
-const backGroundImg = {
-  backgroundImage: `url(${bkgImg})`,
-  backgroundSize: 'cover'
+const clientImg = {
+  float: 'left'
 };
 
 export default Services;

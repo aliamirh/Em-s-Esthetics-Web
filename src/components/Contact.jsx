@@ -32,9 +32,7 @@ class Contact extends React.Component {
 
 const mapStyles = {
   width: '20%',
-  height: '30%',
-  marginLeft: '10%',
-  marginRight: '20%'
+  height: '30%'
 };
 const divContentMargin = {
   marginLeft: '20%',
