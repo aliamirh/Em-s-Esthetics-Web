@@ -5,9 +5,11 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 class Contact extends React.Component {
   render() {
     return (
-      <div id='backgroundColor' style={divContentMargin}>
-        <div>
-          <h1>Contact</h1>
+      <div style={divContentMargin}>
+        <div style={contactHeader}>
+          <p>Em's Esthetics</p>
+          <p>360.605.6447</p>
+          <p>7618 NE Hazel Dell Avenue Vancouver, Washington 98665</p>
         </div>
         <div>
           {/* calling this Component is not letting me update the stylesheet */}
@@ -29,14 +31,22 @@ class Contact extends React.Component {
 }
 
 const mapStyles = {
-  width: '40%',
-  height: '50%'
+  width: '20%',
+  height: '30%',
+  marginLeft: '10%',
+  marginRight: '20%'
 };
 const divContentMargin = {
   marginLeft: '20%',
   marginRight: '20%'
 };
 
+const contactHeader = {
+  fontFamily: 'Roboto, sans-serif',
+  paddingLeft: '2px',
+  fontSize: '25px',
+  float: 'right'
+};
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_API_KEY
 })(Contact);
