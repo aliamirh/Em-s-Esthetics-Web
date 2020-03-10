@@ -37,14 +37,7 @@ class Home extends React.Component {
             of services, I support local and holistic in the up-and-coming
             downtown Vancouver area.
           </p>
-          <div style={comeVisit}>
-            <p>Come Visit</p>
-          </div>
-          <div style={address}>
-            <p>7618 NE Hazel Dell Ave. Vancouver, Washington</p>
-            <p>360.605.6447</p>
-            <p>emsesthetics@gmail.com</p>
-          </div>
+
           <div>
             <YouTube
               videoId='2oKayY5vX6c'
@@ -58,16 +51,6 @@ class Home extends React.Component {
   }
 }
 
-const comeVisit = {
-  fontWeight: 'bold',
-  fontSize: '20px',
-  textAlign: 'center'
-};
-
-const address = {
-  fontWeight: 'bold',
-  textAlign: 'center'
-};
 const boldMission = {
   marginRight: '30%'
 };

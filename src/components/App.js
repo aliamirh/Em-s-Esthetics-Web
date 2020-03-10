@@ -4,6 +4,7 @@ import Home from './Home';
 import Contact from './Contact';
 import Services from './Services';
 import Portfolio from './Portfolio';
+import Bottomer from './Bottomer';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ function App() {
       <Switch>
         <Route path='/portfolio' component={Portfolio} />
       </Switch>
+      <Bottomer />
     </div>
   );
 }
