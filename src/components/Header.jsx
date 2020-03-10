@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.jpg';
+import Facebook from '../img/facebook.png';
+import Instagram from '../img/instagram.png';
+import Twitter from '../img/twitter.png';
 import { Spring } from 'react-spring/renderprops';
 
 const Header = () => {
@@ -9,6 +12,19 @@ const Header = () => {
       {props => (
         <div style={props}>
           <img style={headerLogo} src={Logo} alt='logo' />
+          <div>
+            <ul style={linkUnordered}>
+              <li style={linkListItemSocialMedia}>
+                <img style={socialMedia} src={Facebook} alt='facebook' />
+              </li>
+              <li style={linkListItemSocialMedia}>
+                <img style={socialMedia} src={Instagram} alt='instagram' />
+              </li>
+              <li style={linkListItemSocialMedia}>
+                <img style={socialMedia} src={Twitter} alt='twitter' />
+              </li>
+            </ul>
+          </div>
           <div style={headerLinksDiv}>
             <ul style={linkUnordered}>
               <li style={linkListItem}>
@@ -66,6 +82,15 @@ const headerLogo = {
   marginRight: 'auto',
   height: '15%',
   width: '15%'
+};
+const socialMedia = {
+  height: '2%',
+  width: '2%'
+};
+
+const linkListItemSocialMedia = {
+  display: 'inLine',
+  padding: '10px'
 };
 
 export default Header;
