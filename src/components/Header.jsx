@@ -42,13 +42,6 @@ const Header = () => {
                 <Link style={linkTo} to='/services'>
                   Services
                 </Link>
-                <ul>
-                  <li>Holistic Skin Treatments</li>
-                  <li>Lash Extensions</li>
-                  <li>Waxing & Tinting</li>
-                  <li>Natural Makeup</li>
-                  <li>Aromatherapy</li>
-                </ul>
               </li>
               <li style={linkListItem}>
                 <Link style={linkTo} to='/contact'>
