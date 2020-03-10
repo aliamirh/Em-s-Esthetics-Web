@@ -64,8 +64,8 @@ const headerLogo = {
   display: 'block',
   marginLeft: 'auto',
   marginRight: 'auto',
-  height: '50%',
-  width: '40%'
+  height: '15%',
+  width: '15%'
 };
 
 export default Header;

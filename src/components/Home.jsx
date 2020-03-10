@@ -3,30 +3,33 @@ import Ems from '../fillerImages/emily.jpg';
 
 const Home = () => {
   return (
-    <div>
+    <div style={divContentMargin}>
       <div>
         <img style={emsPhoto} src={Ems} alt='Owner' />
-        <div style={textOverflow}>
-          <h2>T.Emily Amirhamzeh</h2>
-        </div>
+      </div>
+      <div>
+        <h3>About Em's Esthetics:</h3>
+        <p>
+          Emily is a Licensed Esthetician who specializes in holistic skincare,
+          natural makeup, waxing, plant-based tinting, eyelash extensions and
+          essential oils. She was certified for volume lash extensions in May
+          2018 and has been licensed in esthetics since May 2015
+        </p>
+      </div>
+      <div>
+        <h2>Where Beauty Happens Naturally</h2>
       </div>
     </div>
   );
 };
 
 const emsPhoto = {
-  width: '20%',
-  borderRadius: '20%'
+  width: '40%'
 };
 
-const textOverflow = {
-  position: 'absolute',
-  top: '68%',
-  left: '10%',
-  transform: 'translate(-50%, -50%)',
-  fontSize: '27px',
-  paddingLeft: '2px',
-  color: '#72a675'
+const divContentMargin = {
+  marginLeft: '20%',
+  marginRight: '20%'
 };
 
 export default Home;
