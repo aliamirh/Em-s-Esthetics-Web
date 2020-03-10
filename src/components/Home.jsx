@@ -1,42 +1,62 @@
 import React from 'react';
 import Product from '../products/product.jpg';
+import YouTube from 'react-youtube';
 
-const Home = () => {
-  return (
-    <div style={divContentMargin}>
-      <div style={floatContentLeft}>
-        <img style={emsProduct} src={Product} alt='Owner' />
-        <div>
-          <a href='#' class='myButton'>
-            Book Now
-          </a>
+class Home extends React.Component {
+  _onReady(event) {
+    event.target.pauseVideo();
+  }
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        autoplay: 1
+      }
+    };
+    return (
+      <div style={divContentMargin}>
+        <div style={floatContentLeft}>
+          <img style={emsProduct} src={Product} alt='Owner' />
+          <div>
+            <a href='#' class='myButton'>
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div style={slogan}>
+          <br></br>
+          <h3>Where Beauty Happens Naturally</h3>
+        </div>
+        <div style={boldMission}>
+          <p>
+            My mission is to lend a healing hand by offering natural and
+            cruelty-free beauty to the Vancouver, Washington and Portland,
+            Oregon area. I strive to assist you on your journey towards loving
+            your unique born-with-it beauty and skin health. Offering an array
+            of services, I support local and holistic in the up-and-coming
+            downtown Vancouver area.
+          </p>
+          <div style={comeVisit}>
+            <p>Come Visit</p>
+          </div>
+          <div style={address}>
+            <p>7618 NE Hazel Dell Ave. Vancouver, Washington</p>
+            <p>360.605.6447</p>
+            <p>emsesthetics@gmail.com</p>
+          </div>
+          <div>
+            <YouTube
+              videoId='2oKayY5vX6c'
+              opts={opts}
+              onReady={this._onReady}
+            />
+          </div>
         </div>
       </div>
-      <div style={slogan}>
-        <br></br>
-        <h3>Where Beauty Happens Naturally</h3>
-      </div>
-      <div style={boldMission}>
-        <p>
-          My mission is to lend a healing hand by offering natural and
-          cruelty-free beauty to the Vancouver, Washington and Portland, Oregon
-          area. I strive to assist you on your journey towards loving your
-          unique born-with-it beauty and skin health. Offering an array of
-          services, I support local and holistic in the up-and-coming downtown
-          Vancouver area.
-        </p>
-        <div style={comeVisit}>
-          <p>Come Visit</p>
-        </div>
-        <div style={address}>
-          <p>7618 NE Hazel Dell Ave. Vancouver, Washington</p>
-          <p>360.605.6447</p>
-          <p>emsesthetics@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 const comeVisit = {
   fontWeight: 'bold',
