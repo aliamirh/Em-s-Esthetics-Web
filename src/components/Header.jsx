@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
       {props => (
-        <div style={props}>
+        <div class='backgroundColor' style={props}>
           <img style={headerLogo} src={Logo} alt='logo' />
           <div id='borderHome'>
             <ul style={linkUnordered}>
@@ -85,6 +85,7 @@ const headerLogo = {
   display: 'block',
   marginLeft: 'auto',
   marginRight: 'auto',
+  marginBottom: '-70px',
   height: '15%',
   width: '15%'
 };

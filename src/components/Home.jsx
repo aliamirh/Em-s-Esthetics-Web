@@ -37,7 +37,20 @@ class Home extends React.Component {
             of services, I support local and holistic in the up-and-coming
             downtown Vancouver area.
           </p>
-
+          <div style={serviceContainer}>
+            <div style={left}>
+              <h4>Makeup & Waxing</h4>
+              <h5>Enhance Your Natural Glow</h5>
+            </div>
+            <div style={middle}>
+              <h4>Holistic Skin Treatments</h4>
+              <h5>Love Your Born-With-It Beauty</h5>
+            </div>
+            <div style={right}>
+              <h4>Eyelash Extensions</h4>
+              <h5>Wake Up Like This</h5>
+            </div>
+          </div>
           <div>
             <YouTube
               videoId='2oKayY5vX6c'
@@ -50,6 +63,33 @@ class Home extends React.Component {
     );
   }
 }
+const left = {
+  width: '25%',
+  backgroundColor: 'white',
+  marginRight: '20px',
+  textAlign: 'center',
+  padding: '10px',
+  border: '4px double #d3c95d'
+};
+const middle = {
+  width: '25%',
+  backgroundColor: 'white',
+  marginRight: '20px',
+  textAlign: 'center',
+  padding: '10px',
+  border: '4px double #d3c95d'
+};
+const right = {
+  width: '25%',
+  backgroundColor: 'white',
+  textAlign: 'center',
+  padding: '10px',
+  border: '4px double #d3c95d'
+};
+const serviceContainer = {
+  display: 'flex',
+  marginBottom: '20px'
+};
 
 const boldMission = {
   marginRight: '30%'
@@ -73,8 +113,8 @@ const emsProduct = {
 const divContentMargin = {
   fontFamily: 'Roboto, sans-serif',
   color: '#545454',
-  marginLeft: '20%',
-  marginRight: '20%'
+  marginRight: '10%',
+  marginLeft: '10%'
 };
 
 export default Home;

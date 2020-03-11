@@ -2,8 +2,7 @@ import React from 'react';
 
 const Bottomer = () => {
   return (
-    <div>
-      <hr></hr>
+    <div style={backgroundColor}>
       <div style={marginContent}>
         <div style={comeVisit}>
           <p>Come Visit</p>
@@ -18,6 +17,10 @@ const Bottomer = () => {
   );
 };
 
+const backgroundColor = {
+  backgroundColor: '#dbdbd9',
+  borderTop: '5px double #d3c95d'
+};
 const marginContent = {
   marginLeft: '20%',
   marginRight: '20%'

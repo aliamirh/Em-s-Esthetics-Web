@@ -12,7 +12,6 @@ class Contact extends React.Component {
           <p>7618 NE Hazel Dell Avenue Vancouver, Washington 98665</p>
         </div>
         <div>
-          {/* calling this Component is not letting me update the stylesheet */}
           <Map
             google={this.props.google}
             zoom={18}
