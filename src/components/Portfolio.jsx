@@ -2,11 +2,15 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const Portfolio = () => {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+  const fade = useSpring({
+    opacity: 1,
+    config: { duration: 800 },
+    from: { opacity: 0 }
+  });
 
   return (
     <div>
-      <animated.div style={props}>
+      <animated.div style={fade}>
         <h1>Portfolio</h1>
       </animated.div>
     </div>
