@@ -12,7 +12,7 @@ class Contact extends React.Component {
           <p>7618 NE Hazel Dell Avenue Vancouver, Washington 98665</p>
         </div>
         <div>
-          <Map
+          {/* <Map
             google={this.props.google}
             zoom={18}
             style={mapStyles}
@@ -22,7 +22,7 @@ class Contact extends React.Component {
               position={{ lat: 45.6774, lng: -122.6694 }}
               text='Ems Esthetics'
             />
-          </Map>
+          </Map> */}
         </div>
       </div>
     );
@@ -41,8 +41,7 @@ const divContentMargin = {
 const contactHeader = {
   fontFamily: 'Roboto, sans-serif',
   paddingLeft: '2px',
-  fontSize: '25px',
-  float: 'right'
+  fontSize: '25px'
 };
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_API_KEY
