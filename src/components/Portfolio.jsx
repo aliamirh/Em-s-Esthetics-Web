@@ -6,7 +6,9 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1>Portfolio</h1>
+      <animated.div style={props}>
+        <h1>Portfolio</h1>
+      </animated.div>
     </div>
   );
 };
