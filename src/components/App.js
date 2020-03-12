@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Home from './Home';
-import Contact from './Contact';
+import Merch from './Merch';
 import Services from './Services';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
@@ -16,7 +16,7 @@ function App() {
         <Route exact path='/' component={Home} />
       </Switch>
       <Switch>
-        <Route path='/contact' component={Contact} />
+        <Route path='/merch' component={Merch} />
       </Switch>
       <Switch>
         <Route path='/services' component={Services} />

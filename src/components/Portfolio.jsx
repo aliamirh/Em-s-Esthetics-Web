@@ -11,7 +11,7 @@ import client9 from '../clients/client9.jpeg';
 import client10 from '../clients/client10.jpeg';
 import client11 from '../clients/client11.jpeg';
 import client12 from '../clients/client12.jpg';
-import client13 from '../clients/client13.jpg';
+
 import wedding from '../wedding/wedding.jpg';
 import wedding2 from '../wedding/wedding2.jpg';
 
@@ -25,9 +25,9 @@ const Portfolio = () => {
   });
 
   return (
-    <div>
+    <div style={divContentMargin}>
       <animated.div style={fade}>
-        <h1 style={headerFont}>Portfolio</h1>
+        <p style={headerFont}>Models</p>
         <div>
           <img style={scaleClientImages} src={client} alt='client' />
           <img style={scaleClientImages} src={client2} alt='client2' />
@@ -41,11 +41,11 @@ const Portfolio = () => {
           <img style={scaleClientImages} src={client10} alt='client10' />
           <img style={scaleClientImages} src={client11} alt='client11' />
           <img style={scaleClientImages} src={client12} alt='client12' />
-          <img style={scaleClientImages} src={client13} alt='client13' />
         </div>
-
+      </animated.div>
+      <animated.div style={fade}>
         <div>
-          <h1 style={headerFont}>Wedddings</h1>
+          <p style={headerFont}>Weddings</p>
         </div>
         <img style={scaleClientImages} src={wedding} alt='wedding' />
         <img style={scaleClientImages} src={wedding2} alt='wedding2' />
@@ -55,13 +55,21 @@ const Portfolio = () => {
   );
 };
 
-const headerFont = {
+const divContentMargin = {
   fontFamily: 'Roboto, sans-serif',
-  textAlign: 'center'
+  color: '#545454',
+  marginRight: '10%',
+  marginLeft: '10%'
+};
+
+const headerFont = {
+  textAlign: 'center',
+  fontSize: '30px'
 };
 
 const scaleClientImages = {
   objectFit: 'cover',
+  textAlign: 'center',
   width: '300px',
   height: '300px',
   padding: '10px'

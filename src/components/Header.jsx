@@ -41,8 +41,8 @@ const Header = () => {
             </Link>
           </li>
           <li style={linkListItem}>
-            <Link style={linkTo} to='/contact'>
-              Contact
+            <Link style={linkTo} to='/merch'>
+              Merch
             </Link>
           </li>
           <li style={linkListItem}>
