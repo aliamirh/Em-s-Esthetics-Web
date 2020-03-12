@@ -63,6 +63,7 @@ class Home extends React.Component {
     );
   }
 }
+
 const left = {
   width: '25%',
   backgroundColor: 'white',

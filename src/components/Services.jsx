@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import client from '../clients/client.jpg';
 import filler from '../fillerImages/filler.jpg';
+import product4 from '../products/product4.jpg';
 
 const Services = () => {
   return (
@@ -11,6 +12,9 @@ const Services = () => {
       </div>
       <div style={moveFillerImg}>
         <img style={circularFillerImg} src={filler} alt='client' />
+      </div>
+      <div style={productMove}>
+        <img style={scaleClientImages} src={product4} alt='product' />
       </div>
       <div style={divContentMargin}>
         <div id='borderDemo' style={centerMenu}>
@@ -88,6 +92,18 @@ const Services = () => {
       </div>
     </div>
   );
+};
+
+const productMove = {
+  marginRight: '200px',
+  display: 'inlineFlex'
+};
+const scaleClientImages = {
+  objectFit: 'cover',
+  width: '300px',
+  height: '300px',
+  padding: '10px',
+  borderRadius: '50%'
 };
 
 const circularFillerImg = {
