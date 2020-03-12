@@ -94,10 +94,7 @@ const Services = () => {
   );
 };
 
-const productMove = {
-  marginRight: '200px',
-  display: 'inlineFlex'
-};
+const productMove = {};
 const scaleClientImages = {
   objectFit: 'cover',
   width: '300px',

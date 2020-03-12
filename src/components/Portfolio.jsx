@@ -43,8 +43,7 @@ const scaleClientImages = {
   objectFit: 'cover',
   width: '300px',
   height: '300px',
-  padding: '10px',
-  borderRadius: '50%'
+  padding: '10px'
 };
 
 export default Portfolio;
