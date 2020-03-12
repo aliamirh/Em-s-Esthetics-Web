@@ -1,4 +1,5 @@
 import React from 'react';
+import merch from '../products/product4.jpg';
 
 const Merch = () => {
   return (
