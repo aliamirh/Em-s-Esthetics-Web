@@ -21,7 +21,7 @@ const Portfolio = () => {
   const fade = useSpring({
     opacity: 1,
     config: { duration: 800 },
-    from: { opacity: 0 }
+    from: { opacitey: 0 }
   });
 
   return (
