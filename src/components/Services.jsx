@@ -17,7 +17,7 @@ const Services = () => {
         <img style={scaleClientImages} src={product4} alt='product' />
       </div>
       <div style={divContentMargin}>
-        <div id='borderDemo' style={centerMenu}>
+        <div style={centerMenu}>
           <h1 style={headerFont}>Services</h1>
           <p style={boldTextUnderline}>Holistic Skin Treatments</p>
           <p>30 minutes ...............................................$45</p>
