@@ -1,10 +1,11 @@
 import React from 'react';
-import merch from '../products/product4.jpg';
+import merch from '../products/brushset2.jpg';
 
 const Merch = () => {
   return (
     <div>
       <p style={divContentMargin}>Merch</p>
+      <img src={merch} alt='brush' />
     </div>
   );
 };
