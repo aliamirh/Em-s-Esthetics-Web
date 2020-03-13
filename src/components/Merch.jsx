@@ -4,8 +4,10 @@ import merch from '../products/brushset2.jpg';
 const Merch = () => {
   return (
     <div>
-      <p style={divContentMargin}>Merch</p>
-      <img src={merch} alt='brush' />
+      <div style={alignImg}>
+        <p style={divContentMargin}>Merch</p>
+        <img style={pictureSize} src={merch} alt='brush' />
+      </div>
     </div>
   );
 };
@@ -18,4 +20,14 @@ const divContentMargin = {
   fontSize: '30px',
   textAlign: 'center'
 };
+
+const pictureSize = {
+  width: '20%',
+  height: '40%'
+};
+
+const alignImg = {
+  textAlign: 'center'
+};
+
 export default Merch;
