@@ -13,9 +13,9 @@ const Services = () => {
       <div style={moveFillerImg}>
         <img style={circularFillerImg} src={filler} alt='client' />
       </div>
-      <div style={productMove}>
+      {/* <div style={productMove}>
         <img style={scaleClientImages} src={product4} alt='product' />
-      </div>
+      </div> */}
       <div style={divContentMargin}>
         <div style={centerMenu}>
           <h1 style={headerFont}>Services</h1>
@@ -116,7 +116,8 @@ const moveFillerImg = {
 
 const divContentMargin = {
   marginLeft: '20%',
-  marginRight: '20%'
+  marginRight: '20%',
+  color: '#545454'
 };
 
 const centerMenu = {
