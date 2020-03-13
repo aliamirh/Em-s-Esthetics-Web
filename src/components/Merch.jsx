@@ -2,14 +2,21 @@ import React from 'react';
 import brushset1 from '../products/brushset1.jpg';
 import brushset2 from '../products/brushset2.jpg';
 import brushset3 from '../products/brushset3.jpg';
+import brushset4 from '../products/brushset4.jpg';
+import brush1 from '../products/brush1.jpg';
 const Merch = () => {
   return (
     <div>
       <div style={alignImg}>
-        <p style={divContentMargin}>Merch</p>
+        <p style={divContentMargin}>Brush Sets</p>
         <img style={pictureSize} src={brushset1} alt='brush' />
         <img style={pictureSize} src={brushset2} alt='brush' />
         <img style={pictureSize} src={brushset3} alt='brush' />
+        <img style={pictureSize} src={brushset4} alt='brush' />
+      </div>
+      <div style={alignImg}>
+        <p style={divContentMargin}>Single</p>
+        <img style={pictureSize} src={brush1} alt='brush' />
       </div>
     </div>
   );
