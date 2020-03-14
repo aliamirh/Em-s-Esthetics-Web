@@ -41,7 +41,8 @@ const divContentMargin = {
 const pictureSize = {
   width: '20%',
   height: '40%',
-  padding: '10px'
+  padding: '10px',
+  borderRadius: '50%'
 };
 
 const alignImg = {
