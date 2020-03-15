@@ -20,7 +20,7 @@ _Local business owner who is a licensed esthetician. This site will help promote
      style="float: center" 
      height= "300" />
 
-_This is still a work in progress. I will be adding the ability to book a service online in the future._
+_This is still a work in progress. I will be adding the ability to book a service online in the future ._
 
 ## Known Bugs
 
